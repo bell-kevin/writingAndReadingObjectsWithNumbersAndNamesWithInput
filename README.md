@@ -1,6 +1,8 @@
 # writingAndReadingObjectsWithNumbersAndNamesWithInput
 writing And Reading Objects With Numbers And Names With Input for both names and numbers
 
+Old and outdated output
+
 ![output](https://github.com/bell-kevin/writingAndReadingObjectsWithNumbersAndNamesWithInput/blob/main/world.PNG)
 
 == We're Using GitHub Under Protest ==
