@@ -49,6 +49,9 @@ public class Driver {
                 studentList.display();
                 numberList = (Scores) fileIn.readObject();
                 numberList.display();
+                numberList.getLowScore(numbers);
+                numberList.getHighScore(numbers);
+                numberList.getAverageScore(numbers);
             } // end while loop
         } catch (EOFException e) { // terminates infinite while loop
         } catch (Exception e) {
