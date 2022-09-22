@@ -1,6 +1,10 @@
 # writingAndReadingObjectsWithNumbersAndNamesWithInput
 writing And Reading Objects With Numbers And Names With Input for both names and numbers
 
+Output
+
+![output](https://github.com/bell-kevin/writingAndReadingObjectsWithNumbersAndNamesWithInput/blob/main/hello%20world.PNG)
+
 Old and outdated output
 
 ![output](https://github.com/bell-kevin/writingAndReadingObjectsWithNumbersAndNamesWithInput/blob/main/world.PNG)
