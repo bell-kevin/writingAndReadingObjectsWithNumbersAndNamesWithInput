@@ -30,9 +30,11 @@ public class JavaApplication9 {
         } // end for loop
         Scores studentList = new Scores(names);
         NumberList numberList = new NumberList(numbers);
-        String fileName = "scoresOnly.txt";
+        String fileName = "namesAndScores.txt";
         try (ObjectOutputStream fileOut // write object
                 = new ObjectOutputStream(new FileOutputStream(fileName))) {
+            fileOut.writeObject(studentList);
+            fileOut.reset();
             fileOut.writeObject(numberList);
             fileOut.reset();
         } catch (Exception e) {
@@ -43,50 +45,10 @@ public class JavaApplication9 {
         try (ObjectInputStream fileIn = new ObjectInputStream( // read object
                 new FileInputStream(fileName))) {
             while (true) {
-                numberList = (NumberList) fileIn.readObject();
-                numberList.display();
-            } // end while loop
-        } catch (EOFException e) { // terminates infinite while loop
-        } catch (Exception e) {
-            System.out.println(e.getClass());
-            System.out.println(e.getMessage());
-        } // end try/catch, and close fileOut automatically
-//******************************************************************************        
-
-        System.out.println("");
-        //String[] names = {"Caleb", "Izumi", "Mary", "Usha"};
-        //NumberList studentList = new NumberList(names);
-        //System.out.println("List 1: ");
-        //studentList.display();
-        fileName = "ThreeLists.txt";
-        try (ObjectOutputStream fileOut // write object
-                = new ObjectOutputStream(new FileOutputStream(fileName))) {
-            fileOut.writeObject(studentList);
-            fileOut.reset();
-            studentList.addStudent("Anna");
-            studentList.addStudent("James");
-            studentList.addStudent("Noah");
-            fileOut.writeObject(studentList);
-            fileOut.reset();
-            //System.out.println("List 2: added some names");
-            //studentList.display();
-            studentList.removeStudent(1);
-            studentList.removeStudent(2);
-            fileOut.writeObject(studentList);
-            fileOut.reset();
-            //System.out.println("List 3: removed some names");
-            //studentList.display();
-        } catch (Exception e) {
-            System.out.println(e.getClass());
-            System.out.println(e.getMessage());
-        } // end try/catch, and close fileOut automatically
-        try (ObjectInputStream fileIn = new ObjectInputStream( // read object
-                new FileInputStream(fileName))) {
-            System.out.println("");
-            System.out.println("Results of reading objects from file: ");
-            while (true) {
                 studentList = (Scores) fileIn.readObject();
                 studentList.display();
+                numberList = (NumberList) fileIn.readObject();
+                numberList.display(); 
             } // end while loop
         } catch (EOFException e) { // terminates infinite while loop
         } catch (Exception e) {
