@@ -1,6 +1,8 @@
 # writingAndReadingObjectsWithNumbersAndNamesWithInput
 writing And Reading Objects With Numbers And Names With Input for both names and numbers
 
+![output](https://github.com/bell-kevin/writingAndReadingObjectsWithNumbersAndNamesWithInput/blob/main/world.PNG)
+
 == We're Using GitHub Under Protest ==
 
 This project is currently hosted on GitHub.  This is not ideal; GitHub is a
