@@ -3,6 +3,10 @@ writing And Reading Objects With Numbers And Names With Input for both names and
 
 Output
 
+![hello](https://github.com/bell-kevin/writingAndReadingObjectsWithNumbersAndNamesWithInput/blob/main/whatToDoNow.PNG)
+
+OLd Output
+
 ![output](https://github.com/bell-kevin/writingAndReadingObjectsWithNumbersAndNamesWithInput/blob/main/hello%20world.PNG)
 
 Old and outdated output
